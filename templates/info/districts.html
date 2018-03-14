@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Districts List</title>
+</head>
+<body>
+
+<table class="table table-striped">
+    <tr>
+        <th>District Name</th>
+        <th>Division</th>
+        <th>Population Density</th>
+        <th>Education Rate</th>
+        <th>Visited ?</th>
+    </tr>
+
+    {% for district in districts %}
+    <tr>
+        <td>{{ district.name }}</td>
+        <td>{{ district.division }}</td>
+        <td>{{ district.population_density }}</td>
+        <td>{{ district.education_rate }}</td>
+        <td>{{ district.visited }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

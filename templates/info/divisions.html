@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divisions List</title>
+</head>
+<body>
+
+<table class="table table-striped">
+
+    <tr>
+        <th>Division</th>
+        <th>Population</th>
+        <th>Area</th>
+    </tr>
+    {% for division in divisions %}
+    <tr>
+        <td>{{ division.name }}</td>
+        <td>{{ division.population }}</td>
+        <td>{{ division.area }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
